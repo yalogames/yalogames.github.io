@@ -1072,3 +1072,47 @@ override
     width: 170px;
     float: right;
 }
+
+.search-box {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    z-index: -12333;
+}
+.search-box input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #ced4da;
+    font-size: 16px;
+}
+.search-box button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.search-box button svg {
+    width: 20px;
+    height: 20px;
+    fill: #6c757d;
+}
+.search-box button:hover svg {
+    fill: #0056b3;
+}
+.search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 1000;
+}
